@@ -191,6 +191,10 @@ Set-Registry "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "Searchbox
 Set-Registry "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds" "ShellFeedsTaskbarViewMode" 2
 Set-Registry "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" "EnableFeeds" 0
 
+# ウィジェットを非表示にする
+Set-Registry "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarDa" 0
+Set-Registry "HKLM:\SOFTWARE\Policies\Microsoft\Dsh" "AllowNewsAndInterests" 0
+
 # タスクビューボタンを非表示にする
 Set-Registry "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "ShowTaskViewButton" 0
 
