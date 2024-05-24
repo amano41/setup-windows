@@ -212,6 +212,9 @@ Set-Registry "HKLM:\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace" "AllowWindo
 # タッチキーボードボタンを非表示にする
 Set-Registry "HKCU:\SOFTWARE\Microsoft\TabletTip\1.7" "TipbandDesiredVisibility" 0
 
+# Copilot を非表示にする
+Set-Registry "HKCU:\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot" "TurnOffWindowsCopilot" 1
+
 
 ## ==================================================
 ## 設定 → 個人用設定
