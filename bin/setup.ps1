@@ -565,12 +565,12 @@ Add-AppxPackage -AppInstallerFile "https://cdn.files.community/files/stable/File
 ## WinGet
 ## ==================================================
 
-Write-Host "Installing Apps via WinGet..." -ForegroundColor Magenta
-
 if (!(Get-Command -Name "winget" -ErrorAction SilentlyContinue)) {
 	Write-Host "Warning: `"winget`" not found !!" -ForegroundColor Red
 	Read-Host "Update `"App Installer`" and press any key to continue:" -ForegroundColor Yellow
 }
+
+Write-Host "Installing Apps via WinGet..." -ForegroundColor Magenta
 
 winget install -h -e --id Google.Chrome
 winget install -h -e --id Mozilla.Firefox
