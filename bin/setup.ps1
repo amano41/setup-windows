@@ -572,9 +572,12 @@ if (!(Get-Command -Name "winget" -ErrorAction SilentlyContinue)) {
 
 Write-Host "Installing Apps via WinGet..." -ForegroundColor Magenta
 
+winget install -h -e --id Git.Git
+winget install -h -e --id 7zip.7zip
 winget install -h -e --id Google.Chrome
 winget install -h -e --id Mozilla.Firefox
 winget install -h -e --id VivaldiTechnologies.Vivaldi
+winget install -h -e --id Biscuit.Biscuit
 winget install -h -e --id Microsoft.PowerShell
 winget install -h -e --id Microsoft.PowerToys
 winget install -h -e --id Microsoft.VisualStudioCode
