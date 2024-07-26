@@ -251,7 +251,7 @@ Write-Host "Restarting Explorer..." -ForegroundColor Yellow
 Stop-Process -Name Explorer -Force
 
 ## タスクバー：タスクバーボタンを結合する
-Set-Registry "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarGlomLevel" 2
+Set-Registry "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarGlomLevel" 0
 
 ## タスクバー：タスクバーをすべてのディスプレイに表示する
 Set-Registry "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "MMTaskbarEnabled" 0
