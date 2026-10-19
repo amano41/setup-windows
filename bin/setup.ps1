@@ -595,20 +595,27 @@ if (!(Get-Command -Name "winget" -ErrorAction SilentlyContinue)) {
 
 Write-Host "Installing Apps via WinGet..." -ForegroundColor Magenta
 
-winget install -h -e --id Git.Git
-winget install -h -e --id 7zip.7zip
-winget install -h -e --id Google.Chrome
-winget install -h -e --id Mozilla.Firefox
-winget install -h -e --id VivaldiTechnologies.Vivaldi
-winget install -h -e --id Microsoft.PowerShell
-winget install -h -e --id Microsoft.PowerToys
-winget install -h -e --id Microsoft.VisualStudioCode
-winget install -h -e --id Microsoft.WindowsTerminal
-winget install -h -e --id Zoom.Zoom
-winget install -h -e --id Biscuit.Biscuit
-winget install -h -e --id CubeSoft.CubePDF
-winget install -h -e --id CubeSoft.CubePDFUtility
-winget install -h -e --id HermannSchinagl.LinkShellExtension
+winget install -h -e --id Git.Git --accept-source-agreement --accept-package-agreements
+winget install -h -e --id twpayne.chezmoi --accept-source-agreement --accept-package-agreements
+winget install -h -e --id 7zip.7zip --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Google.Chrome --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Mozilla.Firefox --accept-source-agreement --accept-package-agreements
+winget install -h -e --id VivaldiTechnologies.Vivaldi --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Microsoft.PowerShell --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Microsoft.PowerToys --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Microsoft.VisualStudioCode --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Microsoft.WindowsTerminal --accept-source-agreement --accept-package-agreements
+winget install -h -e --id DevToys-app.DevToys --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Zoom.Zoom --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Biscuit.Biscuit --accept-source-agreement --accept-package-agreements
+winget install -h -e --id CubeSoft.CubePDF --accept-source-agreement --accept-package-agreements
+winget install -h -e --id CubeSoft.CubePDFUtility --accept-source-agreement --accept-package-agreements
+winget install -h -e --id HermannSchinagl.LinkShellExtension --accept-source-agreement --accept-package-agreements
+winget install -h -e --id CodecGuide.K-LiteCodecPack.Standard --accept-source-agreement --accept-package-agreements
+winget install -h -e --id Paperpile.Paperpile --accept-source-agreement --accept-package-agreements
+winget install -h -e --id 9PM860492SZD --accept-source-agreement --accept-package-agreements  ## PC Manager
+winget install -h -e --id Logitech.LogiTune --accept-source-agreement --accept-package-agreements
+winget install -h -e --id SteelSeries.GG --accept-source-agreement --accept-package-agreements
 
 
 ## ==================================================
