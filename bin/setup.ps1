@@ -58,6 +58,9 @@ Set-Registry "HKCU:\Control Panel\Accessibility\Keyboard Response" "BounceTime" 
 Set-Registry "HKCU:\Control Panel\Accessibility\Keyboard Response" "DelayBeforeAcceptance" "0"
 Set-Registry "HKCU:\Control Panel\Accessibility\Keyboard Response" "Flags" "3"
 
+## 低レベルフックのタイムアウト時間を長めにする
+Set-Registry "HKCU:\Control Panel\Desktop" "LowLevelHooksTimeout" 1000
+
 
 ## ==================================================
 ## マウスの設定
